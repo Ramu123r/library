@@ -3,78 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Library – Subjects</title>
+    <title>Library Catalog</title>
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        *{
             margin: 0;
             padding: 0;
-            background: #f5f7fa;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
         }
 
-        header {
-            background: #003566;
-            padding: 20px;
+        body{
+            background: linear-gradient(135deg, #d9e4f5, #f2f6ff);
+        }
+
+        header{
+            padding: 25px;
             text-align: center;
-            color: white;
-            font-size: 26px;
-            font-weight: bold;
+            font-size: 32px;
+            font-weight: 600;
+            color: #222;
+            background: linear-gradient(90deg, #6a11cb, #2575fc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
-        .container {
-            padding: 20px;
+        .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            padding: 30px;
         }
 
         .card {
-            background: white;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            text-align: center;
-            font-size: 18px;
-            font-weight: bold;
-            transition: transform 0.2s ease, box-shadow 0.3s ease;
+            position: relative;
+            height: 180px;
+            border-radius: 18px;
+            overflow: hidden;
+            cursor: pointer;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            transform: translateY(20px);
             opacity: 0;
             animation: fadeIn 1s forwards;
         }
 
-        .card:hover {
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(70%);
+            transition: 0.4s ease;
+        }
+
+        .card:hover img {
+            filter: brightness(90%) saturate(1.2);
             transform: scale(1.05);
-            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-            cursor: pointer;
         }
 
-        a {
-            text-decoration: none;
-            color: #003566;
+        .card-title {
+            position: absolute;
+            left: 20px;
+            bottom: 20px;
+            font-size: 26px;
+            font-weight: 600;
+            color: white;
+            text-shadow: 0 3px 10px rgba(0,0,0,0.5);
         }
 
-        /* Fade-in animation */
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(15px); }
+            from { opacity: 0; transform: translateY(30px); }
             to { opacity: 1; transform: translateY(0); }
         }
     </style>
 </head>
 
 <body>
+<header>📚 Library Catalog</header>
 
-<header>📘 My Study Library</header>
+<div class="grid">
 
-<div class="container">
+    <a href="python/index.html">
+        <div class="card">
+            <img src="assets/python.jpg">
+            <div class="card-title">Python</div>
+        </div>
+    </a>
 
-    <a href="python/index.html"><div class="card">Python</div></a>
-    <a href="java/index.html"><div class="card">Java</div></a>
-    <a href="ds/index.html"><div class="card">Data Structures</div></a>
-    <a href="os/index.html"><div class="card">Operating System</div></a>
-    <a href="cn/index.html"><div class="card">Computer Networks</div></a>
-    <a href="dbms/index.html"><div class="card">DBMS</div></a>
-    <a href="ai/index.html"><div class="card">Artificial Intelligence</div></a>
-    <a href="ml/index.html"><div class="card">Machine Learning</div></a>
+    <a href="java/index.html">
+        <div class="card">
+            <img src="assets/java.jpg">
+            <div class="card-title">Java</div>
+        </div>
+    </a>
+
+    <a href="javascript/index.html">
+        <div class="card">
+            <img src="assets/js.jpg">
+            <div class="card-title">JavaScript</div>
+        </div>
+    </a>
+
+    <a href="htmlcss/index.html">
+        <div class="card">
+            <img src="assets/htmlcss.jpg">
+            <div class="card-title">HTML & CSS</div>
+        </div>
+    </a>
+
+    <a href="bash/index.html">
+        <div class="card">
+            <img src="assets/bash.jpg">
+            <div class="card-title">Bash</div>
+        </div>
+    </a>
+
+    <a href="sql/index.html">
+        <div class="card">
+            <img src="assets/sql.jpg">
+            <div class="card-title">SQL / Databases</div>
+        </div>
+    </a>
 
 </div>
 
