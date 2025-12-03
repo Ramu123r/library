@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Networks - Index</title>
+
+    <style>
+        * {
+            margin: 0; padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background: #050505;
+            color: white;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #0b0b0b, #161616);
+            border-bottom: 2px solid #333;
+        }
+
+        header h1 {
+            font-size: 42px;
+            font-weight: 700;
+            background: linear-gradient(90deg, #0099ff, #00eeff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        header p {
+            font-size: 17px;
+            color: #bfbfbf;
+            margin-top: 5px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: grid;
+            gap: 22px;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        }
+
+        .card {
+            background: #1a1a1a;
+            padding: 25px;
+            border-radius: 14px;
+            border: 1px solid #222;
+            text-decoration: none;
+            color: white;
+            transition: 0.35s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Neon rotating glow */
+        .card::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: conic-gradient(
+                from 45deg,
+                #0099ff,
+                #00eeff,
+                #0099ff
+            );
+            animation: rotate 4s linear infinite;
+            opacity: 0.22;
+        }
+
+        @keyframes rotate {
+            to { transform: rotate(360deg); }
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            background: #111;
+            border-color: #00c8ff;
+            box-shadow: 0 0 18px #00c8ff;
+        }
+
+        .card h2 {
+            color: #00c8ff;
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #cccccc;
+            font-size: 15px;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Computer Networks</h1>
+    <p>Protocols • TCP/IP • Routing • Security • Transmission</p>
+</header>
+
+<section class="container">
+
+    <a class="card" href="#">
+        <h2>Introduction to Networks</h2>
+        <p>Basics, components, topologies, and network models.</p>
+    </a>
+
+    <a class="card" href="#">
+        <h2>OSI & TCP/IP Models</h2>
+        <p>Layered architecture, functions & comparisons.</p>
+    </a>
+
+    <a class="card" href="#">
+        <h2>Physical Layer</h2>
+        <p>Signals, transmission media, modulation & bandwidth.</p>
+    </a>
+
+    <a class="card" href="#">
+        <h2>Data Link Layer</h2>
+        <p>Framing, MAC, error detection, CRC, flow control.</p>
+    </a>
+
+    <a class="card" href="#">
+        <h2>Network Layer</h2>
+        <p>IP addressing, subnetting, routing algorithms & protocols.</p>
+    </a>
+
+    <a class="card" href="#">
+        <h2>Transport Layer</h2>
+        <p>TCP, UDP, congestion control, reliability mechanisms.</p>
+    </a>
+
+    <a class="card" href="#">
+        <h2>Application Layer</h2>
+        <p>DNS, HTTP, FTP, SMTP, DHCP, real-world protocols.</p>
+    </a>
+
+    <a class="card" href="#">
+        <h2>Network Security</h2>
+        <p>Firewalls, encryption, attacks & secure communication.</p>
+    </a>
+
+    <a class="card" href="#">
+        <h2>Wireless & Mobile Networks</h2>
+        <p>Wi-Fi, Bluetooth, cellular networks & mobility protocols.</p>
+    </a>
+
+</section>
+
+</body>
+</html>
