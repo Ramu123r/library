@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Library</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background: #0e0e16;
+            color: white;
+        }
+
+        .banner {
+            width: 100%;
+            height: 220px;
+            background: url("../assets/js.jpg") no-repeat center/cover;
+            border-bottom: 4px solid #ffe066;
+            box-shadow: 0 0 25px #ffd43b;
+        }
+
+        .title {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 2.4rem;
+            font-weight: 600;
+            color: #ffe066;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin: 30px auto;
+        }
+
+        .card {
+            background: #1a1a27;
+            padding: 20px;
+            margin-bottom: 18px;
+            border-radius: 12px;
+            border: 1px solid #ffd43b;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+            box-shadow: 0px 0px 20px #ffe066;
+        }
+
+        .card-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #ffe066;
+        }
+
+        .card p {
+            margin-top: 6px;
+            font-size: 0.95rem;
+            color: #d6d6d6;
+        }
+
+        @media (max-width: 600px) {
+            .title {
+                font-size: 1.8rem;
+            }
+            .card {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="banner"></div>
+
+    <h1 class="title">JavaScript Resources</h1>
+
+    <div class="container">
+
+        <div class="card">
+            <div class="card-title">📘 JavaScript Basics</div>
+            <p>Variables, datatypes, operators, input/output, DOM introduction.</p>
+        </div>
+
+        <div class="card">
+            <div class="card-title">🧩 Functions & Scope</div>
+            <p>Functions, scope, closures, callbacks, arrow functions.</p>
+        </div>
+
+        <div class="card">
+            <div class="card-title">📚 Arrays & Objects</div>
+            <p>Array methods, objects, destructuring, spread/rest operators.</p>
+        </div>
+
+        <div class="card">
+            <div class="card-title">⚡ DOM Manipulation</div>
+            <p>Events, selectors, modifying HTML/CSS, event listeners.</p>
+        </div>
+
+        <div class="card">
+            <div class="card-title">🧵 Asynchronous JS</div>
+            <p>Promises, async/await, fetch API, AJAX calls.</p>
+        </div>
+
+        <div class="card">
+            <div class="card-title">🌐 JavaScript Projects</div>
+            <p>Mini projects, games, DOM apps, and real-world examples.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
