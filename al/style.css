@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #050505;
+    color: white;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #0a0a0a, #111);
+    border-bottom: 2px solid #2c2c2c;
+}
+
+.header h1 {
+    font-size: 42px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #00d4ff, #00ff9d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header p {
+    font-size: 18px;
+    color: #bfbfbf;
+}
+
+/* Container */
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 22px;
+    padding: 0 20px;
+}
+
+/* Card */
+.card {
+    background: rgba(20, 20, 20, 0.9);
+    padding: 25px;
+    border-radius: 14px;
+    text-decoration: none;
+    color: white;
+    transition: 0.4s;
+    border: 1px solid #1f1f1f;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Animated neon glow */
+.card::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: conic-gradient(
+        from 45deg,
+        #00d4ff,
+        #00ff9d,
+        #00d4ff
+    );
+    animation: rotate 4s linear infinite;
+    opacity: 0.25;
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background: #111;
+    border-color: #00ffe0;
+    box-shadow: 0 0 18px #00ffe0;
+}
+
+.card h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #00ffe0;
+}
+
+.card p {
+    font-size: 15px;
+    color: #cccccc;
+}
