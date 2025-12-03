@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI / Deep Learning - Index</title>
+
+    <style>
+        * {
+            margin: 0; padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background: #040404;
+            color: white;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #060606, #111);
+            border-bottom: 2px solid #222;
+        }
+
+        header h1 {
+            font-size: 42px;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00eaff, #00ff99);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        header p {
+            font-size: 17px;
+            color: #bfbfbf;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: grid;
+            gap: 22px;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        }
+
+        .card {
+            background: rgba(20, 20, 20, 0.9);
+            padding: 25px;
+            border-radius: 14px;
+            border: 1px solid #1b1b1b;
+            text-decoration: none;
+            color: white;
+            transition: 0.4s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: conic-gradient(
+                from 90deg,
+                #00eaff,
+                #00ff99,
+                #00eaff
+            );
+            animation: spin 4s linear infinite;
+            opacity: 0.25;
+        }
+
+        @keyframes spin {
+            100% { transform: rotate(360deg); }
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            background: #121212;
+            border-color: #00ffe5;
+            box-shadow: 0 0 18px #00ffe5;
+        }
+
+        .card h2 {
+            color: #00ffe5;
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #cccccc;
+            font-size: 15px;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>AI / Deep Learning</h1>
+    <p>Neural Networks • Deep Learning • CNN • RNN • Transformers</p>
+</header>
+
+<section class="container">
+
+    <a class="card" href="#">
+        <h2>Introduction to AI</h2>
+        <p>History, applications & intelligent systems.</p>
+    </a>
+
+    <a class="card" href="#">
+        <h2>Machine Learning Basics</h2>
+        <p>Supervised, unsupervised & reinforcement learning.</p>
+    </a>
+
+    <a class="card" href="#">
+        <h2>Neural Networks</h2>
+        <p>Perceptron, activation functions & backpropagation.</p>
+    </a>
+
+    <a class="card" href="#">
+        <h2>CNN (Convolutional Networks)</h2>
+        <p>Filters, pooling, feature maps & architectures.</p>
+    </a>
+
+    <a class="card" href="#">
+        <h2>RNN / LSTM / GRU</h2>
+        <p>Sequential modeling for text, audio & time-series.</p>
+    </a>
+
+    <a class="card" href="#">
+        <h2>Transformers & Attention</h2>
+        <p>BERT, GPT, encoder-decoder models & multi-head attention.</p>
+    </a>
+
+    <a class="card" href="#">
+        <h2>Training & Optimization</h2>
+        <p>Loss functions, optimizers, regularization & dropout.</p>
+    </a>
+
+    <a class="card" href="#">
+        <h2>AI Applications</h2>
+        <p>Vision, NLP, robotics & real-world deep learning.</p>
+    </a>
+
+</section>
+
+</body>
+</html>
