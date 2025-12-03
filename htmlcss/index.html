@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta-name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS Library</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background: #0e0e16;
+            color: white;
+        }
+
+        .banner {
+            width: 100%;
+            height: 220px;
+            background: url("../assets/htmlcss.jpg") no-repeat center/cover;
+            border-bottom: 4px solid #42a5f5;
+            box-shadow: 0 0 25px #1e88e5;
+        }
+
+        .title {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 2.4rem;
+            font-weight: 600;
+            color: #42a5f5;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin: 30px auto;
+        }
+
+        .card {
+            background: #1a1a27;
+            padding: 20px;
+            margin-bottom: 18px;
+            border-radius: 12px;
+            border: 1px solid #42a5f5;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+            box-shadow: 0px 0px 20px #42a5f5;
+        }
+
+        .card-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #42a5f5;
+        }
+
+        .card p {
+            margin-top: 6px;
+            font-size: 0.95rem;
+            color: #d6d6d6;
+        }
+
+        @media (max-width: 600px) {
+            .title {
+                font-size: 1.8rem;
+            }
+            .card {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="banner"></div>
+
+    <h1 class="title">HTML & CSS Resources</h1>
+
+    <div class="container">
+
+        <div class="card">
+            <div class="card-title">📘 HTML Basics</div>
+            <p>Tags, elements, attributes, headings, paragraphs, images, lists.</p>
+        </div>
+
+        <div class="card">
+            <div class="card-title">🔗 Links & Media</div>
+            <p>Anchor tags, image embedding, video/audio insertion, iFrames.</p>
+        </div>
+
+        <div class="card">
+            <div class="card-title">🎨 CSS Basics</div>
+            <p>Selectors, colors, fonts, borders, margins, padding, backgrounds.</p>
+        </div>
+
+        <div class="card">
+            <div class="card-title">📐 Layouts & Flexbox</div>
+            <p>Display, positioning, Flexbox, responsive layout techniques.</p>
+        </div>
+
+        <div class="card">
+            <div class="card-title">🖌️ CSS Animations</div>
+            <p>Transitions, keyframes, hover effects, smooth UI design.</p>
+        </div>
+
+        <div class="card">
+            <div class="card-title">🌐 HTML & CSS Projects</div>
+            <p>Real-world website pages, mini templates, UI components.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
