@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DBMS & SQL Library</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background: #0e0e16;
+            color: white;
+        }
+
+        .banner {
+            width: 100%;
+            height: 220px;
+            background: url("../assets/sql.jpg") no-repeat center/cover;
+            border-bottom: 4px solid #00d4ff;
+            box-shadow: 0 0 25px #00aaff;
+        }
+
+        .title {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 2.4rem;
+            font-weight: 600;
+            color: #00d4ff;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin: 30px auto;
+        }
+
+        .card {
+            background: #1a1a27;
+            padding: 20px;
+            margin-bottom: 18px;
+            border-radius: 12px;
+            border: 1px solid #00aaff;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+            box-shadow: 0px 0px 20px #00d4ff;
+        }
+
+        .card-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #00d4ff;
+        }
+
+        .card p {
+            margin-top: 6px;
+            font-size: 0.95rem;
+            color: #d6d6d6;
+        }
+
+        @media (max-width: 600px) {
+            .title {
+                font-size: 1.8rem;
+            }
+            .card {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="banner"></div>
+
+    <h1 class="title">DBMS & SQL Resources</h1>
+
+    <div class="container">
+
+        <div class="card">
+            <div class="card-title">🗄️ Introduction to DBMS</div>
+            <p>Data, DBMS, architecture, schemas, keys, data models, ER diagrams.</p>
+        </div>
+
+        <div class="card">
+            <div class="card-title">📘 SQL Basics</div>
+            <p>DDL, DML, DCL commands, creating tables, inserting and updating data.</p>
+        </div>
+
+        <div class="card">
+            <div class="card-title">🔍 SQL Queries</div>
+            <p>Select queries, filtering, sorting, aggregate functions, constraints.</p>
+        </div>
+
+        <div class="card">
+            <div class="card-title">🔗 Joins & Subqueries</div>
+            <p>Inner, left, right, full joins, nested queries, set operations.</p>
+        </div>
+
+        <div class="card">
+            <div class="card-title">🛠️ Normalization</div>
+            <p>1NF, 2NF, 3NF, BCNF, decomposition, functional dependencies.</p>
+        </div>
+
+        <div class="card">
+            <div class="card-title">⚙️ Transactions & Concurrency</div>
+            <p>ACID properties, schedules, locks, serializability, recovery.</p>
+        </div>
+
+        <div class="card">
+            <div class="card-title">📚 SQL Practice & Mini Projects</div>
+            <p>Real-world SQL tasks, queries, practice problems, database design.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
