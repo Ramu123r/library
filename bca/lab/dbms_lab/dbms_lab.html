@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>DBMS Lab</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0d0f1a;
+            color: white;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background: #111526;
+            padding: 12px 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            box-shadow: 0 0 8px rgba(138, 180, 255, 0.4);
+        }
+
+        nav a {
+            color: #8ab4ff;
+            font-size: 18px;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        nav a.active {
+            color: white;
+            text-decoration: underline;
+        }
+
+        header {
+            text-align: center;
+            padding: 25px 0;
+            background: #111526;
+            color: #8ab4ff;
+            font-size: 28px;
+            font-weight: bold;
+            text-shadow: 0 0 8px rgba(138, 180, 255, 0.8);
+            border-top: 2px solid #8ab4ff;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #8ab4ff;
+            border-bottom: 2px solid #8ab4ff;
+            padding-bottom: 8px;
+            margin-bottom: 14px;
+        }
+
+        /* Program List Styling */
+        .program-box {
+            background: #111526;
+            padding: 16px;
+            border-radius: 10px;
+            margin: 14px 0;
+            border: 2px solid #1a2238;
+            box-shadow: 0 0 10px rgba(0,0,0,0.4);
+            transition: 0.25s ease;
+        }
+
+        .program-box:hover {
+            transform: translateY(-5px);
+            border-color: #8ab4ff;
+            box-shadow: 0 0 12px rgba(138, 180, 255, 0.45);
+        }
+
+        .program-box .title {
+            color: #8ab4ff;
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .program-box .content {
+            color: #cfe6ff;
+            line-height: 1.6;
+            font-size: 15.5px;
+            white-space: pre-wrap;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+            background-color: #0d0f1a;
+            color: #8ab4ff;
+        }
+
+        /* small screens */
+        @media (max-width: 640px) {
+            .container { width: 95%; padding: 12px; }
+            nav { gap: 12px; padding: 10px 0; }
+            nav a { padding: 6px 10px; font-size: 16px; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav>
+    <a href="/library/index.html">Home</a>
+    <a href="/library/bca/lab/lab_programs.html">Back</a>
+    <a class="active">DBMS Lab</a>
+</nav>
+
+<header>DBMS Lab</header>
+
+<div class="container">
+    <h2>Programs List</h2>
+
+    <div class="program-box">
+        <div class="title">1. Student Relation (SQL operations)</div>
+        <div class="content">
+A) Student (regno: string, name: string, class: string, bdate: date,
+    marks1:int, marks2:int, marks3:int)
+
+i. Enter at least five tuples for the relation.
+ii. Demonstrate usage of clauses: WHERE, ORDER BY, GROUP BY, HAVING.
+iii. Demonstrate aggregate functions: SUM, AVG, COUNT, LIKE, BETWEEN, MAX, MIN.
+iv. Demonstrate ROLLBACK and COMMIT for transactions on this relation.
+        </div>
+    </div>
+
+    <div class="program-box">
+        <div class="title">1.B Employee & Department Relation (SQL / DDL & DML)</div>
+        <div class="content">
+B) Employee (empid:int, ename:string, age:int, salary:int, deptno:int)
+   Department (deptno:int, dname:string, manager_id:int)
+
+i. Create tables with appropriate PRIMARY KEY and FOREIGN KEY constraints.
+ii. Insert at least 5 tuples into each table.
+iii. Query empid & ename whose salary BETWEEN 10000 AND 50000.
+iv. List ename & salary for employees working in CS department.
+v. Display ename & deptname for all managers.
+        </div>
+    </div>
+
+    <div class="program-box">
+        <div class="title">2. OrderDatabase Queries (SALESMAN / CUSTOMER / ORDERS)</div>
+        <div class="content">
+Schema:
+SALESMAN (Salesman_id, Name, City, Commission)
+CUSTOMER (Customer_id, Cust_Name, City, Grade, Salesman_id)
+ORDERS (Ord_No, Purchase_Amt, Ord_Date, Customer_id, Salesman_id)
+
+Write SQL queries to:
+i. Count customers with grades above Bangalore's average.
+ii. Find name & ids of salesmen who have more than one customer.
+iii. List all salesmen and indicate those who have or don’t have customers in their cities (use UNION).
+iv. Create a view to find salesman who has the customer with the highest order of a day.
+v. Demonstrate DELETE by removing salesman with id=1000 and cascade delete his orders.
+        </div>
+    </div>
+
+    <div class="program-box">
+        <div class="title">3. Insurances Database (PERSON / CAR / ACCIDENT / OWNS / PARTICIPATED)</div>
+        <div class="content">
+Schema:
+PERSON (driver_id, name, address)
+CAR (Regno, model, year)
+ACCIDENT (report_number, date, location)
+OWNS (driver_id, Regno)
+PARTICIPATED (driver_id, Regno, report_number, damage_amount)
+
+i. Create tables with primary & foreign keys.
+ii. Insert at least five tuples for each relation.
+iii.a Update damage_amount for a car with specific Regno in accident report_number=12 to 25000.
+iii.b Insert a new accident record.
+iv. Find total people who owned cars involved in accidents in 2002.
+v. Find total accidents involving cars of a specific model.
+        </div>
+    </div>
+
+    <div class="program-box">
+        <div class="title">4. Book Dealer Database (AUTHOR / PUBLISHER / CATALOG / CATEGORY / ORDER-DETAILS)</div>
+        <div class="content">
+Tables:
+AUTHOR(author-id, name, city, country)
+PUBLISHER(publisher-id, name, city, country)
+CATALOG(book-id, title, author-id, publisher-id, category-id, year, price)
+CATEGORY(category-id, description)
+ORDER_DETAILS(order-no, book-id, quantity)
+
+i. Create tables with PKs and FKs.
+ii. Insert at least five tuples each.
+iii. Find authors who have >=2 books in catalog and whose book prices are greater than average price.
+iv. Find the author of the book with maximum sales.
+v. Update: increase price of books published by a specific publisher by 10%.
+        </div>
+    </div>
+
+    <div class="program-box">
+        <div class="title">5. Student Enrollment & Book Adoption Database</div>
+        <div class="content">
+Schema:
+STUDENT(regno, name, major, bdate)
+COURSE(course_id, cname, dept)
+ENROLL(regno, course_id, sem, marks)
+TEXT(book_ISBN, book_title, publisher, author)
+BOOK_ADOPTION(course_id, sem, book_ISBN)
+
+i. Create tables with PKs & FKs.
+ii. Insert at least five tuples each.
+iii. Add a textbook and adopt it for some department.
+iv. Produce list of textbooks (Course#, Book-ISBN, Book-title) alphabetically for CS courses that use more than two books.
+v. List departments that have adopted books published by a specific publisher.
+        </div>
+    </div>
+
+    <div class="program-box">
+        <div class="title">6. Library Management Database</div>
+        <div class="content">
+Schema:
+BOOK(Book_id, Title, Publisher_Name, Pub_Year)
+BOOK_AUTHORS(Book_id, Author_Name)
+PUBLISHER(Name, Address, Phone)
+BOOK_COPIES(Book_id, Branch_id, No_of_Copies)
+BOOK_LENDING(Book_id, Branch_id, Card_No, Date_Out, Due_Date)
+LIBRARY_BRANCH(Branch_id, Branch_Name, Address)
+
+Write SQL queries to:
+i. Retrieve details of all books – id, title, publisher, authors, number of copies per branch.
+ii. Get borrowers who borrowed more than 3 books between Jan 2017 and Jun 2017.
+iii. Delete a book from BOOK and update other tables accordingly (cascade).
+iv. Create a view of all books and their available copy counts.
+        </div>
+    </div>
+
+    <div class="program-box">
+        <div class="title">7. Company Database (EMPLOYEE / DEPARTMENT / DLOCATION / PROJECT / WORKS_ON)</div>
+        <div class="content">
+Schema:
+EMPLOYEE(SSN, Name, Address, Sex, Salary, SuperSSN, DNo)
+DEPARTMENT(DNo, DName, MgrSSN, MgrStartDate)
+DLOCATION(DNo, DLoc)
+PROJECT(PNo, PName, PLocation, DNo)
+WORKS_ON(SSN, PNo, Hours)
+
+Write SQL queries to:
+i. List all project numbers for projects that involve an employee with last name 'Scott', either as worker or as manager of the controlling department.
+ii. Show resulting salaries if every employee working on the 'IoT' project receives a 10% raise.
+iii. Compute sum, max, min, avg of salaries for 'Accounts' department.
+iv. Create a view (dept name, dept location) and display departments located in 'Dharwad'.
+        </div>
+    </div>
+
+</div>
+
+<footer>&copy; 2025 Mr. Ramachandra Angadi</footer>
+
+</body>
+</html>
