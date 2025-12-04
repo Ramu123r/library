@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BCA – Index Page</title>
+
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #0d0f1a;
+            color: white;
+        }
+
+        header {
+            text-align: center;
+            padding: 25px;
+            font-size: 30px;
+            letter-spacing: 1px;
+            font-weight: 600;
+            color: #8ab4ff;
+            text-shadow: 0 0 12px #6b9dff;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 28px;
+            padding: 25px;
+        }
+
+        .card {
+            position: relative;
+            height: 170px;
+            border-radius: 15px;
+            overflow: hidden;
+            cursor: pointer;
+            border: 2px solid #1a1f33;
+            background: #111424;
+            transform: translateY(20px);
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+            box-shadow: 0 0 15px rgba(0,0,0,0.4);
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(65%);
+            transition: 0.35s ease-in-out;
+        }
+
+        .card:hover img {
+            transform: scale(1.06);
+            filter: brightness(80%);
+        }
+
+        .title {
+            position: absolute;
+            bottom: 15px;
+            left: 20px;
+            font-size: 22px;
+            font-weight: 600;
+            text-shadow: 0 0 10px rgba(0,0,0,0.8);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #0d0f1a;
+            color: #8ab4ff;
+            margin-top: 25px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>🎓 BCA </header>
+
+<div class="grid">
+
+    <!-- BCA Subjects -->
+    <a href="../python/index.html">
+        <div class="card">
+            <img src="../assets/python.jpg">
+            <div class="title">Python Programming</div>
+        </div>
+    </a>
+
+    <a href="../java/index.html">
+        <div class="card">
+            <img src="../assets/java.jpg">
+            <div class="title">Java Programming</div>
+        </div>
+    </a>
+
+    <a href="../ds/index.html">
+        <div class="card">
+            <img src="../assets/ds.jpg">
+            <div class="title">Data Structures</div>
+        </div>
+    </a>
+
+    <a href="../cn/index.html">
+        <div class="card">
+            <img src="../assets/network.jpg">
+            <div class="title">Computer Networks</div>
+        </div>
+    </a>
+
+    <a href="../os/index.html">
+        <div class="card">
+            <img src="../assets/os.jpg">
+            <div class="title">Operating System</div>
+        </div>
+    </a>
+
+    <!-- ⭐ LAB PROGRAMS CARD -->
+    <a href="lab_programs.html">
+        <div class="card">
+            <img src="../assets/lab.jpg">
+            <div class="title">Lab Programs</div>
+        </div>
+    </a>
+
+</div>
+
+<footer>
+    <p>&copy; 2025 Mr. Ramachandra Angadi</p>
+</footer>
+
+</body>
+</html>
