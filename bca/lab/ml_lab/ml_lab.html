@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Machine Learning Lab</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0d0f1a;
+            color: white;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background: #111526;
+            padding: 12px 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            box-shadow: 0 0 8px rgba(138,180,255,0.4);
+        }
+
+        nav a {
+            color: #8ab4ff;
+            font-size: 18px;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        nav a.active {
+            color: white;
+            text-decoration: underline;
+        }
+
+        header {
+            text-align: center;
+            padding: 25px 0;
+            background: #111526;
+            color: #8ab4ff;
+            font-size: 28px;
+            font-weight: bold;
+            text-shadow: 0 0 8px rgba(138,180,255,0.8);
+            border-top: 2px solid #8ab4ff;
+        }
+
+        .container {
+            width: 85%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #8ab4ff;
+            border-bottom: 2px solid #8ab4ff;
+            padding-bottom: 5px;
+        }
+
+        /* Program List Styling */
+        .program-box {
+            background: #111526;
+            padding: 18px;
+            border-radius: 10px;
+            margin: 15px 0;
+            border: 2px solid #1a2238;
+            box-shadow: 0 0 10px rgba(0,0,0,0.4);
+            transition: 0.3s ease;
+        }
+
+        .program-box:hover {
+            transform: translateY(-5px);
+            border-color: #8ab4ff;
+            box-shadow: 0 0 12px rgba(138,180,255,0.5);
+        }
+
+        .program-box a, .program-box .text {
+            color: #cfe6ff;
+            text-decoration: none;
+            font-size: 16.5px;
+            display: block;
+            line-height: 1.6;
+        }
+
+        .program-box .title {
+            color: #8ab4ff;
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+            background-color: #0d0f1a;
+            color: #8ab4ff;
+        }
+
+        @media (max-width:640px) {
+            .container { width: 95%; padding: 12px; }
+            nav { gap: 12px; padding: 10px 0; }
+            nav a { padding: 6px 8px; font-size: 16px; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav>
+    <a href="/library/index.html">Home</a>
+    <a href="/library/bca/lab/lab_programs.html">Back</a>
+    <a class="active">Machine Learning Lab</a>
+</nav>
+
+<header>Machine Learning Lab</header>
+
+<div class="container">
+    <h2>Programs List</h2>
+
+    <div class="program-box">
+        <div class="title">1. FIND-S Algorithm</div>
+        <div class="text">Implement and demonstrate the FIND-S algorithm to find the most specific hypothesis given training samples. Read training data from a <code>.csv</code> file and display the evolving hypothesis.</div>
+    </div>
+
+    <div class="program-box">
+        <div class="title">2. Candidate-Elimination Algorithm</div>
+        <div class="text">For a set of training examples in a <code>.csv</code>, implement Candidate-Elimination to compute the version space (S and G boundaries) and output all hypotheses consistent with the examples.</div>
+    </div>
+
+    <div class="program-box">
+        <div class="title">3. Decision Tree (ID3)</div>
+        <div class="text">Write a program to build a decision tree using the ID3 algorithm on an appropriate dataset (CSV), then use the tree to classify new samples and report the classification result.</div>
+    </div>
+
+    <div class="program-box">
+        <div class="title">4. Naive Bayes Classifier (numeric/categorical)</div>
+        <div class="text">Implement a Naive Bayesian classifier for a training dataset in CSV. Train the model, classify test sets, and compute accuracy (and optionally confusion matrix).</div>
+    </div>
+
+    <div class="program-box">
+        <div class="title">5. Naive Bayes for Document Classification</div>
+        <div class="text">Use Naive Bayes to classify a collection of documents (preprocess text, TF or TF-IDF). Compute accuracy, precision and recall on test data.</div>
+    </div>
+
+    <div class="program-box">
+        <div class="title">6. Bayesian Network for Medical Diagnosis</div>
+        <div class="text">Construct a Bayesian network (e.g., for heart disease) using a medical dataset (Heart Disease dataset). Use it to perform diagnosis/inference and evaluate results.</div>
+    </div>
+
+    <div class="program-box">
+        <div class="title">7. Expectation-Maximization (EM) Clustering</div>
+        <div class="text">Apply the EM algorithm to cluster data from a CSV file (e.g., Gaussian Mixture Model). Show cluster assignments and basic evaluation (log-likelihood, cluster sizes).</div>
+    </div>
+
+    <div class="program-box">
+        <div class="title">8. k-Means Clustering</div>
+        <div class="text">Use k-Means to cluster a dataset from CSV. Visualize clusters (if 2D/3D), show inertia/within-cluster sum-of-squares and compare results for different k values.</div>
+    </div>
+
+    <div class="program-box">
+        <div class="title">9. k-Nearest Neighbour (k-NN) on IRIS</div>
+        <div class="text">Implement k-NN to classify the IRIS dataset. Print both correct and wrong predictions and compute accuracy, precision, recall per class.</div>
+    </div>
+
+    <div class="program-box">
+        <div class="title">10. Locally Weighted Regression (Non-parametric)</div>
+        <div class="text">Implement Locally Weighted Regression to fit data points (select appropriate dataset). Plot fitted curve vs data and report error metrics.</div>
+    </div>
+
+</div>
+
+<footer>&copy; 2025 Mr. Ramachandra Angadi</footer>
+
+</body>
+</html>
