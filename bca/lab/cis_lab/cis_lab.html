@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Cryptography & Information Security Lab</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0d0f1a;
+            color: white;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background: #111526;
+            padding: 12px 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            box-shadow: 0 0 8px rgba(138, 180, 255, 0.4);
+        }
+
+        nav a {
+            color: #8ab4ff;
+            font-size: 18px;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        nav a.active {
+            color: white;
+            text-decoration: underline;
+        }
+
+        header {
+            text-align: center;
+            padding: 25px 0;
+            background: #111526;
+            color: #8ab4ff;
+            font-size: 28px;
+            font-weight: bold;
+            text-shadow: 0 0 8px rgba(138, 180, 255, 0.8);
+            border-top: 2px solid #8ab4ff;
+        }
+
+        .container {
+            width: 85%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #8ab4ff;
+            border-bottom: 2px solid #8ab4ff;
+            padding-bottom: 5px;
+        }
+
+        /* Program List Styling */
+        .program-box {
+            background: #111526;
+            padding: 18px;
+            border-radius: 10px;
+            margin: 15px 0;
+            border: 2px solid #1a2238;
+            box-shadow: 0 0 10px rgba(0,0,0,0.4);
+            transition: 0.3s ease;
+        }
+
+        .program-box:hover {
+            transform: translateY(-5px);
+            border-color: #8ab4ff;
+            box-shadow: 0 0 12px rgba(138, 180, 255, 0.5);
+        }
+
+        .program-box .title {
+            color: #8ab4ff;
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .program-box .text {
+            color: #cfe6ff;
+            line-height: 1.6;
+            font-size: 15.5px;
+            white-space: pre-wrap;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+            background-color: #0d0f1a;
+            color: #8ab4ff;
+        }
+
+        @media (max-width:640px) {
+            .container { width: 95%; padding: 12px; }
+            nav { gap: 12px; padding: 10px 0; }
+            nav a { padding: 6px 8px; font-size: 16px; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav>
+    <a href="/library/index.html">Home</a>
+    <a href="/library/bca/lab/lab_programs.html">Back</a>
+    <a class="active">Cryptography &amp; Info Sec Lab</a>
+</nav>
+
+<header>Cryptography &amp; Information Security Lab</header>
+
+<div class="container">
+    <h2>Programs List</h2>
+
+    <div class="program-box">
+        <div class="title">1. XOR each character (C)</div>
+        <div class="text">Write a C program that contains a string (char pointer) with value "Hello World". The program should XOR each character in this string with 0 and display the result.</div>
+    </div>
+
+    <div class="program-box">
+        <div class="title">2. AND/XOR with 127 (C)</div>
+        <div class="text">Write a C program that contains a string (char pointer) with value "Hello World". The program should AND or XOR each character in this string with 127 and display the result.</div>
+    </div>
+
+    <div class="program-box">
+        <div class="title">3. Classical Ciphers (Java)</div>
+        <div class="text">Write a Java program to perform encryption and decryption using:\n• Caesar Cipher\n• Substitution Cipher\n• Hill Cipher</div>
+    </div>
+
+    <div class="program-box">
+        <div class="title">4. DES algorithm (Java)</div>
+        <div class="text">Write a Java program to implement the DES algorithm logic (educational implementation / demonstration of rounds, S-boxes, permutations).</div>
+    </div>
+
+    <div class="program-box">
+        <div class="title">5. Blowfish (C/Java)</div>
+        <div class="text">Write a C or Java program to implement the Blowfish algorithm logic (key schedule and round function demonstration).</div>
+    </div>
+
+    <div class="program-box">
+        <div class="title">6. Rijndael / AES (C/Java)</div>
+        <div class="text">Write a C or Java program to implement the Rijndael (AES) algorithm logic (SubBytes, ShiftRows, MixColumns, AddRoundKey).</div>
+    </div>
+
+    <div class="program-box">
+        <div class="title">7. RC4 & Blowfish (Java)</div>
+        <div class="text">Write RC4 logic in Java. Using Java Cryptography, encrypt text "Hello world" using Blowfish. Create your own key using Java keytool (instructions/demonstration).</div>
+    </div>
+
+    <div class="program-box">
+        <div class="title">8. RSA Algorithm (Java)</div>
+        <div class="text">Write a Java program to implement the RSA algorithm (key generation, encryption, decryption) and demonstrate with sample plaintext.</div>
+    </div>
+
+    <div class="program-box">
+        <div class="title">9. Diffie–Hellman (HTML + JS)</div>
+        <div class="text">Implement the Diffie–Hellman Key Exchange mechanism using HTML and JavaScript (demonstrate generation of shared secret between two parties).</div>
+    </div>
+
+    <div class="program-box">
+        <div class="title">10. SHA-1 Message Digest (Java)</div>
+        <div class="text">Calculate the message digest of a text using the SHA-1 algorithm in Java (show hex digest output and sample verification).</div>
+    </div>
+
+    <div class="program-box">
+        <div class="title">11. MD5 Message Digest (Java)</div>
+        <div class="text">Calculate the message digest of a text using the MD5 algorithm in Java (show hex digest output and sample verification).</div>
+    </div>
+
+</div>
+
+<footer>&copy; 2025 Mr. Ramachandra Angadi</footer>
+
+</body>
+</html>
