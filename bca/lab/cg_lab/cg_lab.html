@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Graphics Lab</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0d0f1a;
+            color: white;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background: #111526;
+            padding: 12px 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            box-shadow: 0 0 8px rgba(138, 180, 255, 0.4);
+        }
+
+        nav a {
+            color: #8ab4ff;
+            font-size: 18px;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        nav a.active {
+            color: white;
+            text-decoration: underline;
+        }
+
+        header {
+            text-align: center;
+            padding: 25px 0;
+            background: #111526;
+            color: #8ab4ff;
+            font-size: 28px;
+            font-weight: bold;
+            text-shadow: 0 0 8px rgba(138, 180, 255, 0.8);
+            border-top: 2px solid #8ab4ff;
+        }
+
+        .container {
+            width: 85%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #8ab4ff;
+            border-bottom: 2px solid #8ab4ff;
+            padding-bottom: 5px;
+        }
+
+        /* Program List Styling */
+        .program-box {
+            background: #111526;
+            padding: 18px;
+            border-radius: 10px;
+            margin: 15px 0;
+            border: 2px solid #1a2238;
+            box-shadow: 0 0 10px rgba(0,0,0,0.4);
+            transition: 0.3s ease;
+        }
+
+        .program-box:hover {
+            transform: translateY(-5px);
+            border-color: #8ab4ff;
+            box-shadow: 0 0 12px rgba(138, 180, 255, 0.5);
+        }
+
+        .program-box a {
+            color: #8ab4ff;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 600;
+            display: block;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+            background-color: #0d0f1a;
+            color: #8ab4ff;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav>
+    <a href="/library/index.html">Home</a>
+    <a href="/library/bca/lab/lab_programs.html">Back</a>
+    <a class="active">Computer Graphics Lab</a>
+</nav>
+
+<header>Computer Graphics Lab</header>
+
+<div class="container">
+    <h2>Programs List</h2>
+
+    <div class="program-box"><a href="#">1. Create a chess board.</a></div>
+    <div class="program-box"><a href="#">2. Draw line using DDA.</a></div>
+    <div class="program-box"><a href="#">3. Draw line using Bresenham’s Algorithm.</a></div>
+    <div class="program-box"><a href="#">4. Draw a circle.</a></div>
+    <div class="program-box"><a href="#">5. Draw a rectangle.</a></div>
+    <div class="program-box"><a href="#">6. Draw ellipse.</a></div>
+    <div class="program-box"><a href="#">7. Draw various shapes.</a></div>
+    <div class="program-box"><a href="#">8. Move a car.</a></div>
+    <div class="program-box"><a href="#">9. Create Smiling face animation.</a></div>
+    <div class="program-box"><a href="#">10. Draw a pie chart.</a></div>
+    <div class="program-box"><a href="#">11. Draw Bezier Surface.</a></div>
+    <div class="program-box"><a href="#">12. Display circles in circles.</a></div>
+    <div class="program-box"><a href="#">13. Demonstrate countdown.</a></div>
+    <div class="program-box"><a href="#">14. Demonstrate traffic light program.</a></div>
+    <div class="program-box"><a href="#">15. Restrict mouse pointer in a circle.</a></div>
+
+</div>
+
+<footer>&copy; 2025 Mr. Ramachandra Angadi</footer>
+
+</body>
+</html>
