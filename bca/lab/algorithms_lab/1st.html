@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program 1 - Fibonacci Number</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0d0f1a;
+            color: white;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background: #111526;
+            padding: 12px 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            box-shadow: 0 0 8px rgba(138, 180, 255, 0.4);
+        }
+
+        nav a {
+            color: #8ab4ff;
+            font-size: 18px;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        nav a.active {
+            color: white;
+            text-decoration: underline;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+            background: #111526;
+            color: #8ab4ff;
+            font-size: 28px;
+            font-weight: bold;
+            text-shadow: 0 0 8px rgba(138, 180, 255, 0.8);
+            border-top: 2px solid #8ab4ff;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #8ab4ff;
+            border-bottom: 2px solid #8ab4ff;
+            padding-bottom: 6px;
+        }
+
+        .content-box {
+            background: #111526;
+            padding: 18px;
+            border-radius: 10px;
+            border: 2px solid #1a2238;
+            box-shadow: 0 0 10px rgba(0,0,0,0.4);
+            margin-bottom: 18px;
+        }
+
+        pre {
+            background: #000000;
+            color: #00ffc8;
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 16px;
+            overflow-x: auto;
+            border: 1px solid #1a2238;
+        }
+
+        img {
+            width: 350px;
+            margin: 10px auto;
+            display: block;
+            border: 2px solid #1a2238;
+            border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+            background: #0d0f1a;
+            color: #8ab4ff;
+            border-top: 1px solid #8ab4ff;
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav>
+    <a href="../../../index.html">Home</a>
+    <a href="../lab_programs.html">Back</a>
+    <a class="active">Program 1</a>
+</nav>
+
+<header>Compute Nth Fibonacci Number</header>
+
+<div class="container">
+
+    <h2>Flowchart</h2>
+    <div class="content-box">
+        <p><i>(Replace when image available)</i></p>
+        <img src="flowchart_fib.png" alt="Flowchart">
+    </div>
+
+    <h2>Algorithm</h2>
+    <div class="content-box">
+        <ol>
+            <li>Start</li>
+            <li>Read value of <b>n</b></li>
+            <li>Initialize <b>previousFib = 0</b> and <b>currentFib = 1</b></li>
+            <li>Repeat loop from <b>i = 0</b> to <b>n - 2</b></li>
+            <li>Compute <b>newFib = previousFib + currentFib</b></li>
+            <li>Update <b>previousFib = currentFib</b> and <b>currentFib = newFib</b></li>
+            <li>Display <b>currentFib</b></li>
+            <li>Stop</li>
+        </ol>
+    </div>
+
+    <h2>Program</h2>
+    <div class="content-box">
+<pre>
+#include&lt;stdio.h&gt;
+
+void main()
+{
+    int i,n,newFib,previousFib = 0, currentFib = 1;
+    printf("Enter n\n");
+    scanf("%d",&n);
+
+    for(i=0;i&lt;n-1;i++)
+    {
+        newFib = previousFib + currentFib;
+        previousFib = currentFib;
+        currentFib = newFib;
+    }
+
+    printf("Computing Fibonacci number is = %d",currentFib);
+}
+</pre>
+    </div>
+
+    <h2>Output</h2>
+    <div class="content-box">
+<pre>
+Enter n
+8
+Computing Fibonacci number is = 21
+</pre>
+    </div>
+
+</div>
+
+<footer>&copy; 2025 Mr. Ramachandra Angadi</footer>
+
+</body>
+</html>
