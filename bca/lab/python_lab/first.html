@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Python Lab</title>
-<style>
+    <title>Program 1 - Hello Python & Arithmetic Operations</title>
+
+    <style>
         body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
@@ -41,7 +42,7 @@
 
         header {
             text-align: center;
-            padding: 25px 0;
+            padding: 20px 0;
             background: #111526;
             color: #8ab4ff;
             font-size: 28px;
@@ -51,7 +52,7 @@
         }
 
         .container {
-            width: 85%;
+            width: 90%;
             margin: auto;
             padding: 20px;
         }
@@ -59,41 +60,45 @@
         h2 {
             color: #8ab4ff;
             border-bottom: 2px solid #8ab4ff;
-            padding-bottom: 5px;
+            padding-bottom: 6px;
         }
 
-        /* Program List Styling */
-        .program-box {
+        .content-box {
             background: #111526;
             padding: 18px;
             border-radius: 10px;
-            margin: 15px 0;
             border: 2px solid #1a2238;
             box-shadow: 0 0 10px rgba(0,0,0,0.4);
-            transition: 0.3s ease;
+            margin-bottom: 18px;
         }
 
-        .program-box:hover {
-            transform: translateY(-5px);
-            border-color: #8ab4ff;
-            box-shadow: 0 0 12px rgba(138, 180, 255, 0.5);
+        pre {
+            background: #000000;
+            color: #00ffc8;
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 16px;
+            overflow-x: auto;
+            border: 1px solid #1a2238;
         }
 
-        .program-box a {
-            color: #8ab4ff;
-            text-decoration: none;
-            font-size: 20px;
-            font-weight: 600;
+        img {
+            width: 350px;
+            margin: 10px auto;
             display: block;
+            border: 2px solid #1a2238;
+            border-radius: 10px;
         }
 
         footer {
             text-align: center;
             padding: 15px;
             margin-top: 40px;
-            background-color: #0d0f1a;
+            background: #0d0f1a;
             color: #8ab4ff;
+            border-top: 1px solid #8ab4ff;
         }
+
     </style>
 </head>
 <body>
@@ -101,18 +106,24 @@
 <!-- Navigation Bar -->
 <nav>
     <a href="../../../index.html">Home</a>
-    <a href="#" onclick="history.back()">Back</a>
-    <a class="active">Python Lab</a>
+    <a href="python_lab.html">Back</a>
+    <a class="active">Program 1</a>
 </nav>
-     <h2>Program</h2>
+
+<header>Program 1 - Hello Python & Arithmetic Operations</header>
+
+
+    <h2>Program</h2>
     <div class="content-box">
 <pre>
+# 1(a). Write a Python program to print "Hello Python"
 
-# 1. a. Write a python program to print "Hello Python"
-# print("Hello Python")
+print("Hello Python")
 
 
-# 1. b.Write a python program to do arithmetical operations
+# 1(b). Write a Python program to perform
+# arithmetic operations
+
 a = 10
 b = 5
 
@@ -120,10 +131,24 @@ print("Addition =", a + b)
 print("Subtraction =", a - b)
 print("Multiplication =", a * b)
 print("Division =", a / b)
-    </pre>
+</pre>
     </div>
-  <footer>&copy; 2025 Mr. Ramachandra Angadi</footer>
-    
+
+    <h2>Output</h2>
+    <div class="content-box">
+<pre>
+Hello Python
+
+Addition = 15
+Subtraction = 5
+Multiplication = 50
+Division = 2.0
+</pre>
+    </div>
+
+</div>
+
+<footer>&copy; 2025 Mr. Ramachandra Angadi</footer>
 
 </body>
 </html>
